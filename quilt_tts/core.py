@@ -33,7 +33,7 @@ def speak_lore(lore_text, voice_id="21m00Tcm4TlvDq8ikWAM", output_path="lore.mp3
     }
     body = {
         "text": lore_text[:5000],  # ~5KB max for free tier
-        "model_id": "eleven_monolingual_v1",
+        "model_id": "eleven_turbo_v2_5",
         "voice_settings": {"stability": 0.5, "similarity_boost": 0.5},
     }
     data = json.dumps(body).encode("utf-8")
